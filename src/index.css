@@ -1,0 +1,78 @@
+@import url(//db.onlinewebfonts.com/c/51ba22ae06790efd464bde752a2cd9d1?family=Flexo);
+* {
+  padding: 0;
+  font-family: Flexo;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Flexo;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn-search {
+  padding: 7px 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-top: 5px;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #4965b1;
+  height: 100vh;
+}
+
+.search-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: #ebb96e;
+  background-color: #4965b1;
+  height: 250px;
+}
+
+.search-header input {
+  text-align: center;
+  padding: 7px 16px;
+  border-radius: 5px;
+  border: none;
+  text-transform: capitalize;
+}
+
+input:focus {
+  outline: 1px solid red;
+}
+.pokemon-img {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-container {
+  letter-spacing: 3px;
+  font-family: Flexo;
+  font-weight: 100px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-self: center;
+  text-transform: capitalize;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  line-height: 1.5rem;
+  align-items: center;
+  height: 70vh;
+}
+.search-text {
+  margin-top: 190px;
+  color: #ebb96e;
+}
