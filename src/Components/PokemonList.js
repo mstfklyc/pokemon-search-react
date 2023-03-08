@@ -15,7 +15,7 @@ export default function PokemonList({ pokeData }) {
       </div>
       {pokeData.stats ? (
         <p>
-          <b>HP:</b>
+          <b>HP:  v</b>
           {pokeData.stats[0].base_stat}
         </p>
       ) : (
@@ -23,7 +23,7 @@ export default function PokemonList({ pokeData }) {
       )}
       {pokeData.stats ? (
         <p>
-          <b>Attack:</b>
+          <b>Attack:  </b>
           {pokeData.stats[1].base_stat}
         </p>
       ) : (
@@ -31,7 +31,7 @@ export default function PokemonList({ pokeData }) {
       )}
       {pokeData.stats ? (
         <p>
-          <b>Defence:</b>
+          <b>Defence:  </b>
           {pokeData.stats[2].base_stat}
         </p>
       ) : (
@@ -39,7 +39,7 @@ export default function PokemonList({ pokeData }) {
       )}
       {pokeData.stats ? (
         <p>
-          <b>Special Attack:</b>
+          <b>Special Attack:  </b>
           {pokeData.stats[3].base_stat}
         </p>
       ) : (
@@ -47,7 +47,7 @@ export default function PokemonList({ pokeData }) {
       )}
       {pokeData.stats ? (
         <p>
-          <b>Special Defense:</b>
+          <b>Special Defense:  </b>
           {pokeData.stats[4].base_stat}
         </p>
       ) : (
@@ -55,7 +55,7 @@ export default function PokemonList({ pokeData }) {
       )}
       {pokeData.stats ? (
         <p>
-          <b>Speed</b>
+          <b>Speed:  </b>
           {pokeData.stats[4].base_stat}
         </p>
       ) : (

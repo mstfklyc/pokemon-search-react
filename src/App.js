@@ -6,12 +6,15 @@ function App() {
   const [pokeData, setPokeData] = useState([]);
   const [input, setInput] = useState("");
   const [isChosen, setIsChosen] = useState(false);
+  const [searchText, setSearchText] = useState("Search a pokemon")
 
   const getData = () => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
       .then((response) => response.json())
       .then((data) => setPokeData(data))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err.message));
+
+
   };
 
   return (
@@ -22,7 +25,7 @@ function App() {
           placeholder="Enter A Pokemon name"
           onChange={(e) => setPokemonName(e.target.value)}
         ></input>
-        <button
+        <button disabled={!pokemonName}
           onClick={() => {
             getData();
             setIsChosen(true);
@@ -32,12 +35,14 @@ function App() {
           Search
         </button>
       </header>
-      {isChosen ? (
-        <PokemonList pokeData={pokeData} isChosen={isChosen} />
-      ) : (
-        <h1 className="search-text">Search for pokemons</h1>
-      )}
-    </div>
+      {
+        isChosen ? (
+          <PokemonList pokeData={pokeData} isChosen={isChosen} />
+        ) : (
+          <h1 className="search-text">{searchText}</h1>
+        )
+      }
+    </div >
   );
 }
 
