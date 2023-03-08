@@ -1,3 +1,12 @@
+Created with pokemon api : https://pokeapi.co/
+
+
+![Screenshot_14](https://user-images.githubusercontent.com/87584628/223744977-c4a0d1a3-95b1-434d-b8d0-59d81ce8a540.png)
+![Screenshot_15](https://user-images.githubusercontent.com/87584628/223744993-5bab4a5a-df3e-4e93-8db8-e8b7082e3ee2.png)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
